@@ -12,8 +12,8 @@ public class MyButton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (NotDestroy.Inst != null)
-        { NotDestroy.Inst.bgm.Stop(); }
+        //if (NotDestroy.Inst != null)
+        //{ NotDestroy.Inst.bgm.Stop(); }
     }
 
     // Update is called once per frame
@@ -24,7 +24,7 @@ public class MyButton : MonoBehaviour
     public void RestartButton()
     {
         SceneManager.LoadScene("Play1");
-        NotDestroy.Inst.bgm.Play();
+        //NotDestroy.Inst.bgm.Play();
         NotDestroy.Inst.Life = 3;
         NotDestroy.Inst.Score = 0;
         NotDestroy.Inst.UpdateLife();
