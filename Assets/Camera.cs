@@ -14,8 +14,10 @@ public class Camera : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-
-        transform.position = new Vector3(player.transform.position.x + 5.0f, player.transform.position.y, -10);
+        if (!player.GetComponent<Player>().isDead)
+        { 
+            transform.position = new Vector3(player.transform.position.x + 5.0f, player.transform.position.y, -10); 
+        }
 
     }
 }
