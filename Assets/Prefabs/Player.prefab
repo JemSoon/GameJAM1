@@ -151,6 +151,7 @@ MonoBehaviour:
   jumpSound: {fileID: 8300000, guid: b0a9ef4b250a01145aba1c986d7b653e, type: 3}
   dingSound: {fileID: 8300000, guid: 62e28d3f616690a489e9902fe261aaf0, type: 3}
   ouchSound: {fileID: 8300000, guid: 0f20348404584e14585b37bb57bf8d0e, type: 3}
+  goal: {fileID: 0}
 --- !u!82 &1477575333
 AudioSource:
   m_ObjectHideFlags: 0

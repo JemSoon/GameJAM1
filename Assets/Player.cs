@@ -28,10 +28,13 @@ public class Player : MonoBehaviour
     public AudioClip dingSound;
     public AudioClip ouchSound;
 
+    public GameObject goal;
+
     // Start is called before the first frame update
     void Start()
     {
         sound= GetComponent<AudioSource>();
+        goal.SetActive(false);
     }
 
     // Update is called once per frame
@@ -135,6 +138,12 @@ public class Player : MonoBehaviour
         if(collision.CompareTag("Item"))
         {
             sound.PlayOneShot(dingSound, 0.03f);
+        }
+
+        if (collision.CompareTag("Key"))
+        {
+            Destroy(collision.gameObject);
+            goal.SetActive(true);
         }
     }
 }

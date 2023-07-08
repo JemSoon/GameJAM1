@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
                 SceneManager.LoadScene("Play2");
                 break;
             case "Play2":
-                SceneManager.LoadScene("Play1");
+                SceneManager.LoadScene("GameClear");
                 break;
         }
     }
